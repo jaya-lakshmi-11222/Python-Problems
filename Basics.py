@@ -39,3 +39,54 @@ b = temp
 
 print("a = ", a)
 print("b = ", b)
+
+
+#Read two numbers as input strings, convert them to integers, and print their sum
+a = '1'
+b = '2'
+print(int(a)+int(b))
+
+#Convert float to integer and print both values
+a = 1.22
+b = int(a)
+print(b + a)
+
+#Input an integer and print it as a string and float
+a = int(input())
+print(str(a))
+print(float(a))
+
+name = 'Jaya'
+age = 21
+city = 'Hyderabad'
+print("Hi ", name, "you are ",age,"years old and live in ",city)
+
+#Input two numbers and perform all arithmetic operations (+, -, *, /, %, **)
+a = 8
+b = 4
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a**b)
+
+#Print function
+n = int(input())
+for i in range(1,n+1):
+    print(i, end="")
+
+
+
+#Leap year or not
+def is_leap(year):
+    leap = False
+
+    if(year%4==0):
+        if(year%400 == 0) or (year%100 != 0):
+            leap = True
+    return leap
+
+year = int(input())
+print(is_leap(year))
+
