@@ -136,3 +136,14 @@ if __name__ == '__main__':
     print_full_name(first_name, last_name)
 
 
+#print even numbers
+n = int(input())
+for i in range(0, n):
+    if i%2==0:
+        print(i)
+
+#print odd numbers
+n = int(input())
+for i in range(0,n):
+    if(i%2 != 0):
+        print(i)
