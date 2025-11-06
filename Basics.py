@@ -101,41 +101,6 @@ if __name__ == '__main__':
     print(result)
 
 
-#capitalize the first letter of words
-#!/bin/python3
-
-import math
-import os
-import random
-import re
-import sys
-
-# Complete the solve function below.
-def solve(s):
-    return s.title()
-
-if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
-
-    s = input()
-
-    result = solve(s)
-
-    fptr.write(result + '\n')
-
-    fptr.close()
-
-#using function with f strings
-def print_full_name(first, last):
-    # Write your code here
-    print(f"Hello {first_name} {last_name}! You just delved into python.")
-
-if __name__ == '__main__':
-    first_name = input()
-    last_name = input()
-    print_full_name(first_name, last_name)
-
-
 #print even numbers from 0 to n
 n = int(input())
 for i in range(0, n):
