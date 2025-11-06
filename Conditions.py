@@ -108,3 +108,55 @@ if year%4==0:
         print("Not a Leap year")
 else:
     print("Not at all")
+
+#Write a program to check if a number is a multiple of 3, 5, or both
+a=15
+if a%3==0 and a%5==0:
+    print("Multiple of both 3 and 5")
+elif a%3==0:
+    print("Multiple of 3")
+elif a%5==0:
+    print("Multiple of 5")
+else:
+    print("Not a multiple of 3 or 5")
+
+#Take a character input and check if it’s an uppercase letter (A–Z) without using built-in string functions
+char1='A'
+char2='a'
+if char1>='A' and char1<='Z':
+    print("Char1 is uppercase")
+if char2>='A' and char2<='Z':
+    print("Char2 is uppercase")
+else:
+    print("Char2 is lowercase")
+
+#Use multiple if conditions to check if a number is divisible by any number other than 1 and itself
+a=29
+divisible=False
+for i in range(2,a):
+    if a%i==0:
+        divisible=True
+        break
+if divisible:
+    print("Not Prime")
+else:
+    print("Prime")
+
+#Input coordinates (x, y) and determine in which quadrant the point lies (I, II, III, IV)
+x = 10
+y = -5
+if x > 0 and y > 0:
+    print("Quadrant I")
+elif x < 0 and y > 0:
+    print("Quadrant II")
+elif x < 0 and y < 0:
+    print("Quadrant III")
+else:
+    print("Quadrant IV")
+
+#Determine whether a number is odd or even without using the modulus operator
+num = 10
+if (num // 2) * 2 == num:
+    print("Even")
+else:
+    print("Odd")
